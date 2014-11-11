@@ -82,6 +82,6 @@ db.define_table('Customer', Field('CID', 'id', requires=IS_NOT_EMPTY()), Field('
 
 db.define_table('Test', Field('TID', 'id', requires=IS_NOT_EMPTY()), Field('Tname', 'string'), Field('Tdescription', 'string'))
 
-db.define_table('Employee', Field('EID', 'id', requires=IS_NOT_EMPTY()), Field('Ename', 'string'), Field('Password', 'string',requires=IS_NOT_EMPTY()),Field('address','string'), Field('email','string', requires=IS_EMAIL()),Field('Phno1','string',requires='IS_DIGIT()'),Field('event_instance_id', 'reference event_instance'))
+#db.define_table('Employee', Field('EID', 'id', requires=IS_NOT_EMPTY()), Field('Ename', 'string'), Field('Password', 'string',requires=IS_NOT_EMPTY()),Field('address','string'), Field('email','string', requires=IS_EMAIL()),Field('Phno1','string',requires='IS_DIGIT()'),Field('event_instance_id', 'reference event_instance'))
 
-db.define_table('TestsConducted', Field('TID', db.Test), Field('CID', db.Customer), Field('Status', 'string'), Field('Report', 'string', len=1000))
+#db.define_table('TestsConducted', Field('TID', db.Test), Field('CID', db.Customer), Field('Status', 'string'), Field('Report', 'string', len=1000))
